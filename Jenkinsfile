@@ -22,7 +22,7 @@ pipeline {
             }
 
         }
-        stage('maven build'){
+        stage('upload artifact'){
             steps{
                 script{
                     def mavenPom = readMavenPom file: 'pom.xml'
