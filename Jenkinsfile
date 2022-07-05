@@ -4,7 +4,7 @@ pipeline{
         docker { image 'maven:3.8.6-eclipse-temurin-8-alpine' }
     }
     tools {
-        maven 'maven3'
+        maven "M2_HOME"
     }
     stages{
         stage('mavin build'){
